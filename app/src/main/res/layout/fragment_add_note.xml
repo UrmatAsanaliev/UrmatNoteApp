@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginHorizontal="24dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.AddNoteFragment">
+
+    <EditText
+        android:background="@drawable/bg_edit"
+        android:id="@+id/ed_title"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:hint="Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:background="@drawable/bg_edit"
+        android:layout_marginVertical="12dp"
+        android:id="@+id/ed_desc"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:hint="Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginTop="12dp"
+        android:id="@+id/btn_save"
+        android:textAllCaps="false"
+        android:text="Save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
