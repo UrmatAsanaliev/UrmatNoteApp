@@ -11,6 +11,12 @@ class NoteAdapter : RecyclerView.Adapter<NoteAdapter.NoteViewHolder>() {
 
     private val list = ArrayList<NoteModel>()
 
+    fun setList(list: List<NoteModel>) {
+        this.list.clear()
+        this.list.addAll(list)
+        notifyDataSetChanged()
+    }
+
     inner class NoteViewHolder(private val binding: ItemNoteBinding):
             ViewHolder(binding.root) {
                 fun bind(model: NoteModel) {
